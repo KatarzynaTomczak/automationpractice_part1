@@ -12,7 +12,7 @@ public class WebDriverConfig {
     public WebDriver driver;
 
     public WebDriverConfig(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Kasia\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
